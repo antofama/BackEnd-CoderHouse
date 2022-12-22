@@ -1,36 +1,39 @@
 class ProductManager{
     products;
+    static id = 1;
     constructor (){
         this.products = [];
     }
 
     addProduct (title, description, price, thumbnail, code, stock) {
+        ProductManager.id++;
         const product = {
-            id: this.products.length + 1,
             title,
             description,
             price,
             thumbnail,
             code,
             stock,
+            id:ProductManager.id,
         };
-
-        if(
-            title === undefined ||
-            description === undefined ||
-            price === undefined ||
-            thumbnail === undefined ||
-            code === undefined ||
-            stock === undefined
-        ){
-            return console.log("Todos los campos son obligatorios");
+        
+        const checkInCart = products.find((element) => element.code === product.code);
+        if (checkInCart) {
+            console.log("Error");
+       } else {
+            this.products.push(product)
+            ProductManager.id++
         }
 
-        const validacion = this.products.find ((product)=> product.code === code);
-        if (validacion) {
-            return console.log("El producto ya existe");           
-        }else{
-            this.products.push(product);
+        if (!product.title ||
+            !product.price ||
+            !product.thumbnail ||
+            !product.code ||
+            !product.stock ||
+            !product.id) {
+                console.log("verificar campos");
+                throw new Error("Los campos estan vacios")
+            
         }
     }
 
@@ -40,9 +43,11 @@ class ProductManager{
 
     getProductsById(id){
         const search = this.products.find (product => product.id === id);
-        if(product === undefined){
+        if(search === undefined){
             return 'Not found';
-        }
+         }else{
+            console.log(search);
+         }
     }
 }
 
