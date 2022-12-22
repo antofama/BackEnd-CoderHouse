@@ -1,0 +1,19 @@
+{
+  "name": "desafios",
+  "version": "1.0.0",
+  "description": "Paquetes npm para aprender file system coder house",
+  "main": "ProductManager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antofama/BackEnd-CoderHouse.git"
+  },
+  "author": "Fama Antonella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antofama/BackEnd-CoderHouse/issues"
+  },
+  "homepage": "https://github.com/antofama/BackEnd-CoderHouse#readme"
+}
