@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "Mochila Lisboa",
+        "description": "Mochila de cuero ecologico",
+        "price": 22200,
+        "thumbnail": "ruta de imagen",
+        "code": 101,
+        "stock": 3
+    },
+    
+    {
+        "id": 2,
+        "title": "Bag Lisboa",
+        "description": "bandolera de cuero ecologico y doble bolsillo",
+        "price": 17000,
+        "thumbnail": "ruta de imagen",
+        "code": 102,
+        "stock": 5
+    },
+    
+    {
+        "id": 3,
+        "title": "Billetera Mallorca",
+        "description": "Tarjetero de cuero ecologico",
+        "price": 10000,
+        "thumbnail": "ruta de imagen",
+        "code": 103,
+        "stock": 8
+    },
+    
+    {
+        "id": 4,
+        "title": "Monedero Sevilla",
+        "description": "Mini monedero color bordo",
+        "price": 5000,
+        "thumbnail": "ruta de imagen",
+        "code": 104,
+        "stock": 7
+    },
+    
+    {
+        "id": 5,
+        "title": "PortaBag Tropea",
+        "description": "Porta celular bandolera de ecuero ecologico",
+        "price": 14000,
+        "thumbnail": "ruta de imagen",
+        "code": 105,
+        "stock": 4
+
+    }
+]

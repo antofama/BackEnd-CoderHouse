@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/antofama/BackEnd-CoderHouse/issues"
   },
-  "homepage": "https://github.com/antofama/BackEnd-CoderHouse#readme"
+  "homepage": "https://github.com/antofama/BackEnd-CoderHouse#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "moment": "^2.29.4"
+  },
+  "keywords": []
 }
