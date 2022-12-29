@@ -1,3 +1,34 @@
 const express = require ('express');
+const app = express();
+const ProductManager = require('./proyectos/ServidorExpress');
+const productManager = new ProductManager ('./database/porductos.JSON');
+const PORT = 8080
+
+
+app.get('/products', async (req,res)=> {
+    const products = await productManager.getProducts();
+    const {limit} =req.query
+    if (limit) {        
+        return res.json(products.slice(0,limit))
+    } else {
+        return res.json(products)
+    }
+})
+
+app.get('/products/:pid', async (req,res)=>{
+    const products = await productManager.getProducts();
+    const {pid} = req.params
+    const product = products.find(products => products.id === parseInt(pid))
+
+    if (product) {
+        return res.status(200).json(product)
+    } else {
+        return res.status(404).json({message:'Producto no encontrado'});
+    }
+})
+
+app.listen(PORT, ()=> {
+    console.log(`Server running on port ${PORT}`);
+})
 
 import express from 'express';
