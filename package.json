@@ -2,7 +2,7 @@
   "name": "desafios",
   "version": "1.0.0",
   "description": "Paquetes npm para aprender file system coder house",
-  "main": "ProductManager.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

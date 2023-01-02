@@ -1,7 +1,7 @@
 const express = require ('express');
 const app = express();
 const ProductManager = require('./proyectos/ServidorExpress');
-const productManager = new ProductManager ('./database/porductos.JSON');
+const productManager = new ProductManager ('../database/productos.JSON');
 const PORT = 8080
 
 
@@ -30,5 +30,3 @@ app.get('/products/:pid', async (req,res)=>{
 app.listen(PORT, ()=> {
     console.log(`Server running on port ${PORT}`);
 })
-
-import express from 'express';
